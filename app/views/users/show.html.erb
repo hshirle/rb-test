@@ -1,0 +1,15 @@
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<% @user.comments.each do |comment| %>
+  <p>
+    <strong>:FJJ</strong>
+    <%= comment.body %>
+  </p>
+ 
+<% end %>
+
+
+<%= link_to 'Back', users_path %>
